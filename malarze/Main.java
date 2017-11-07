@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import malarze.model.Painter;
 import malarze.view.MainWindowController;
 import java.io.File;
 import java.io.FileInputStream;
@@ -19,7 +20,6 @@ import java.io.Reader;
 
 
 import java.io.InputStreamReader;
-import model.Painter;
 
 public class Main extends Application {
 	private ObservableList<Painter> painters = FXCollections.observableArrayList();
