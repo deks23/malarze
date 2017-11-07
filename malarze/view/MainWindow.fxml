@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane minHeight="509.0" minWidth="401.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="malarze.view.MainWindowController">
+   <top>
+      <AnchorPane prefHeight="55.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="paintersList" layoutX="-7.0" layoutY="14.0" onAction="#onPainterSelection" prefHeight="27.0" prefWidth="193.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="10.0" />
+            <Button layoutX="216.0" layoutY="10.0" mnemonicParsing="false" onAction="#onPreviousButtonClick" text="Poprzedni" AnchorPane.leftAnchor="216.0" AnchorPane.topAnchor="10.0" />
+            <Button layoutX="310.0" layoutY="10.0" mnemonicParsing="false" onAction="#onNextButtonClick" text="Następny" AnchorPane.leftAnchor="310.0" AnchorPane.topAnchor="10.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <ImageView fx:id="painting" fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <Label fx:id="paintingDescription" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="79.0" prefWidth="401.0" style="-fx-border-color: #000; -fx-border-insets: 0 10 5 10;" text="Label" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets left="10.0" />
+         </padding></Label>
+   </bottom>
+</BorderPane>
